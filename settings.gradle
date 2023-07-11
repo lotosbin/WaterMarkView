@@ -1,1 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+    }
+}
+plugins {
+    id "com.android.settings" version "8.0.2"
+}
+android {
+    compileSdk 33
+    minSdk 14
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
 include ':demo', ':watermark'
